@@ -75,6 +75,7 @@
     text-align: center;
     justify-content: center;
     transition: color 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease;
+    gap:20px;
 }
 
 
@@ -247,7 +248,7 @@ p {
 
     .products-section-list-text-container {
         max-width: 224px;
-        max-height: 473px;
+        /* max-height: 473px; */
         padding: 118px 18px 40px 18px;
         justify-content: center;
     }

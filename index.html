@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="./styles.css/gallery.css" />
     <link rel="stylesheet" href="./styles.css/contacts.css" />
     <link rel="stylesheet" href="./styles.css/footer.css" />
+    <link rel="stylesheet" href="./styles.css/franchise.css" />
   </head>
 
   <body>
@@ -865,7 +866,11 @@
             <svg width="5" height="9" fill="white">
               <use href="./images/icons.svg#Vector"></use>
             </svg></button
-          ><button type="button" class="contacts-franchise-button">
+          ><button
+            type="button"
+            class="contacts-franchise-button"
+            franchise-modal-open
+          >
             Franchise
             <svg width="5" height="9">
               <use href="./images/icons.svg#button-vector"></use>
@@ -909,8 +914,73 @@
       <p class="footer-copyright">© 2022 - IceCream. All Rights Reserved.</p>
     </footer>
 
+    <div class="is-hidden franchise" franchise-modal>
+      <div class="franchise-bg">
+        <button class="franchise-close" type="button" franchise-modal-close>
+          <svg width="8" height="8" class="close-svg">
+            <use href="./images/icons.svg#franchise-close-button"></use>
+          </svg>
+        </button>
+        <p class="franchise-title">
+          Leave your detail and maybe we will call you back
+        </p>
+        <form class="franchise-field-alignment">
+          <div class="franchise-field-container">
+            <label class="franchise-field" for="user-name">Name</label>
+            <div class="input-container">
+              <input
+                required
+                type="text"
+                name="user-name"
+                placeholder=""
+                id="user-name"
+                class="inp"
+              />
+            </div>
+          </div>
+          <div class="franchise-field-container">
+            <label class="franchise-field" for="user-phone">Number</label>
+            <div class="input-container">
+              <input
+                required
+                type="tel"
+                name="phone"
+                id="user-phone"
+                class="inp"
+              />
+            </div>
+          </div>
+          <div class="franchise-field-container">
+            <label class="franchise-field" for="user-email">Email</label>
+            <div class="input-container">
+              <input
+                required
+                type="email"
+                name="email"
+                id="user-email"
+                class="inp"
+              />
+            </div>
+          </div>
+          <div class="franchise-field-container align-comment-field">
+            <label class="franchise-field" for="user-comment"
+              >a few words, my darling</label
+            ><textarea
+              class="comment-field"
+              id="user-comment"
+              name="user-comment"
+              rows="5"
+              placeholder="Write here..."
+            ></textarea>
+          </div>
+          <button type="submit" class="franchise-submit-button">Send</button>
+        </form>
+      </div>
+    </div>
+
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal-buy.js"></script>
+    <script src="./js/franchise-modal.js"></script>
     <script
       defer=""
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

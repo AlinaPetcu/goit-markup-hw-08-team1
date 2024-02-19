@@ -36,7 +36,7 @@ p{
         justify-content: center;
         align-items: center;
         gap:32px;
-        margin-top:120px;
+        margin-top:-60px;
         padding-bottom: 60px;
     }
     
@@ -202,7 +202,7 @@ p{
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                
+                margin-top: -150px;
             }
         
             .contacts-individuals {
@@ -292,7 +292,7 @@ p{
                     justify-content: center;
                     align-items: center;
                     gap: 32px;
-                    margin-top: 120px;
+                    margin-top: -60px;
                     padding-bottom: 60px;
                 }
             

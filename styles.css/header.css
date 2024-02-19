@@ -117,6 +117,7 @@ img {
   text-align: left;
   width: 218px;
   height: 106px;
+  gap: 20px;
 }
 
 .header-main__title--white {
@@ -691,6 +692,7 @@ img {
     margin-top: 38px;
     height: 44px;
     width: 159px;
+    padding: 0;
   }
 
   .header-uppercontent__hamburger {
@@ -784,16 +786,19 @@ img {
     font-size: 14px;
     line-height: 18px;
     text-align: center;
+    padding: 0;
   }
 
   .button--red {
     width: 107px;
     height: 40px;
+    padding: 0;
   }
 
   .button--white {
     width: 138px;
     height: 40px;
+    padding: 0;
   }
 
   .header-main__img {
@@ -987,6 +992,7 @@ img {
     margin-top: 32px;
     width: 199px;
     height: 50px;
+    margin-bottom: 20px;
   }
 
   .header-uppercontent__hamburger {
@@ -1062,17 +1068,18 @@ img {
     z-index: 20;
     position: absolute;
     left: 248px;
-    top: 0px;
+    top: -40px;
     /* bottom: 31px; */
     border-radius: 50%;
     height: 335px;
     width: 333px;
     background-color: var(--background-color-4);
+    left: 40%;
   }
 
   .header-main__img--ice {
     position: absolute;
-    top: 24px;
+    top: 46px;
     padding: 0px 123px 0px 78px;
     display: flex;
     z-index: auto;
@@ -1136,15 +1143,21 @@ img {
 
   .header-lowercontent__text {
     /* padding-top: 25px; */
-    position: absolute;
+    /* position: absolute;
     top: 280px;
+    left: 200px; */
+    position: absolute;
+    top: 252px;
     left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
   }
 
   .header-lowercontent__button {
     position: relative;
-    bottom: 110px;
-    right: 80px;
+    bottom: 125px;
+    right: 98px;
   }
 
   .header-lowercontent__img {
@@ -1167,14 +1180,14 @@ img {
     width: 190px;
     position: absolute;
     /* padding-bottom: 20px; */
-    top: 183px;
+    top: 163px;
     right: 0px;
   }
 
   .header-lowercontent__text--description {
     display: flex;
     position: relative;
-    padding: 0px 0px 0px 18px;
+    /* padding: 0px 0px 0px 18px; */
     bottom: 80px;
     right: 80px;
   }
@@ -1213,6 +1226,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 0;
   }
 
   .button--white {
@@ -1256,7 +1270,8 @@ img {
     width: 346px;
     height: 344px;
     flex-shrink: 0;
-    padding: 25px 0px 0px 0px;
+    padding: 31px 0px 0px 0px;
+    left: 20%;
   }
 
   .header-uppercontent__hamburger {
